@@ -1,0 +1,67 @@
+{
+  "DuReader": {
+    "available": 80416,
+    "selected": 10245
+  },
+  "HotpotQA": {
+    "available": 84516,
+    "selected": 10767
+  },
+  "Law-Medical_data": {
+    "available": 2054,
+    "selected": 262
+  },
+  "MIRACL": {
+    "available": 40203,
+    "selected": 5122
+  },
+  "MLDR": {
+    "available": 41434,
+    "selected": 5279
+  },
+  "MSMARCO": {
+    "available": 485905,
+    "selected": 61904
+  },
+  "Mr.TyDi": {
+    "available": 48729,
+    "selected": 6208
+  },
+  "NQ": {
+    "available": 58568,
+    "selected": 7461
+  },
+  "SQuAD": {
+    "available": 87599,
+    "selected": 11160
+  },
+  "T2Ranking": {
+    "available": 90467,
+    "selected": 11525
+  },
+  "Trivia": {
+    "available": 60315,
+    "selected": 7684
+  },
+  "cMedQAv2": {
+    "available": 50000,
+    "selected": 6370
+  },
+  "en_NLI_data": {
+    "available": 274951,
+    "selected": 35029
+  },
+  "mMARCO-zh": {
+    "available": 100000,
+    "selected": 12740
+  },
+  "zh_NLI_data": {
+    "available": 64707,
+    "selected": 8244
+  },
+  "_total": {
+    "available": 1569864,
+    "selected": 200000,
+    "seed": "bge-m3-200k-v1"
+  }
+}

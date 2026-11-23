@@ -1,0 +1,190 @@
+audio/audiocaps:
+  family: audio
+  dataset_parser: audio_pair
+  data_path: data/audio/audiocaps/train
+audio/ave:
+  family: audio
+  dataset_parser: audio_pair
+  data_path: data/audio/ave/train
+audio/clotho:
+  family: audio
+  dataset_parser: audio_pair
+  data_path: data/audio/clotho/train
+audio/speechcoco:
+  family: audio
+  dataset_parser: audio_pair
+  data_path: data/audio/speechcoco/train
+audio/fsd50k:
+  family: audio
+  dataset_parser: audio_pair
+  data_path: data/audio/fsd50k/train
+audio/nsynth:
+  family: audio
+  dataset_parser: audio_pair
+  data_path: data/audio/nsynth/train
+audio/speechcommand:
+  family: audio
+  dataset_parser: audio_pair
+  data_path: data/audio/speechcommand/train
+audio/urbansound8k:
+  family: audio
+  dataset_parser: audio_pair
+  data_path: data/audio/urbansound8k/train
+image/ImageNet_1K:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: ImageNet_1K
+image/N24News:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: N24News
+image/HatefulMemes:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: HatefulMemes
+image/VOC2007:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: VOC2007
+image/SUN397:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: SUN397
+image/OK-VQA:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: OK-VQA
+  require_explicit_text_negative: true
+image/A-OKVQA:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: A-OKVQA
+image/DocVQA:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: DocVQA
+image/InfographicsVQA:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: InfographicsVQA
+image/ChartQA:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: ChartQA
+image/Visual7W:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: Visual7W
+image/VisDial:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: VisDial
+image/CIRR:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: CIRR
+image/VisualNews_t2i:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: VisualNews_t2i
+image/VisualNews_i2t:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: VisualNews_i2t
+image/MSCOCO_t2i:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: MSCOCO_t2i
+image/MSCOCO_i2t:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: MSCOCO_i2t
+image/NIGHTS:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: NIGHTS
+image/WebQA:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: WebQA
+image/MSCOCO:
+  family: image
+  dataset_parser: mmeb_zip
+  dataset_root: data/image/MMEB-train
+  task_name: MSCOCO
+visdoc/PixmoCharts:
+  family: visdoc
+  dataset_parser: pixmo
+  parquet_dir: data/visdoc/pixmo-docs/charts
+  global_dataset_name: visdoc/pixmo
+visdoc/PixmoTables:
+  family: visdoc
+  dataset_parser: pixmo
+  parquet_dir: data/visdoc/pixmo-docs/tables
+  global_dataset_name: visdoc/pixmo
+visdoc/PixmoDiagrams:
+  family: visdoc
+  dataset_parser: pixmo
+  parquet_dir: data/visdoc/pixmo-docs/diagrams
+  global_dataset_name: visdoc/pixmo
+visdoc/PixmoOther:
+  family: visdoc
+  dataset_parser: pixmo
+  parquet_dir: data/visdoc/pixmo-docs/other
+  global_dataset_name: visdoc/pixmo
+visdoc/ColPali:
+  family: visdoc
+  dataset_parser: vidore
+  dataset_path: data/visdoc/colpali/data
+  global_dataset_name: visdoc/colpali
+visdoc/VisRAG:
+  family: visdoc
+  dataset_parser: visrag
+  dataset_path: data/visdoc/visrag/data
+  global_dataset_name: visdoc/visrag
+video/full-epoch:
+  family: video
+  dataset_parser: prebuilt_pair_mix
+  data_path: data/video/pairs
+  parquet_pattern: train.parquet
+text/320k-hn25:
+  family: text
+  dataset_parser: prebuilt_pair_mix
+  data_path: data/text/pairs
+  parquet_pattern: train.parquet
+tool/ret-rex-full:
+  family: tool
+  dataset_parser: prebuilt_pair_mix
+  data_path: data/tool/pairs
+  parquet_pattern: train.parquet
+gui/three-sources-single:
+  family: gui
+  dataset_parser: gui_agent
+  dataset_root: data/gui
+  source_names:
+  - AutoWebGLM
+  - WebArena
+  - WebLINX
+memory/evo-full:
+  family: memory
+  dataset_parser: evo_memory
+  data_path: data/memory/evo

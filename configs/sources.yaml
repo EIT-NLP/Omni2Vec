@@ -1,0 +1,78 @@
+# Directly downloadable training metadata and source archives.
+# Paths are relative to the repository root. Only fetch the sources you need.
+hub:
+  image:
+    repo: TIGER-Lab/MMEB-train
+    revision: 76dd0a440b6d4c02776830a804443fffbb2d0bfa
+    directory: data/image/MMEB-train
+    include: ['*/train-*.parquet', 'images_zip/*.zip']
+  pixmo:
+    repo: allenai/pixmo-docs
+    revision: d887597bf4af2bc61a4210071a8cef898287e6fb
+    directory: data/visdoc/pixmo-docs
+    include: ['*/train-*.parquet']
+  colpali:
+    repo: vidore/colpali_train_set
+    revision: e13d3594064836f7fd69fad7e3d2b51065b335c7
+    directory: data/visdoc/colpali
+    include: ['data/train-*.parquet']
+  visrag:
+    repo: openbmb/VisRAG-Ret-Train-In-domain-data
+    revision: 9c2ecd955e15151b57c6e4ae7a7bb13dc5ad09d2
+    directory: data/visdoc/visrag
+    include: ['data/train-*.parquet']
+  bge:
+    repo: Shitao/bge-m3-data
+    revision: a69db8b86e9c1767d193ee0de95e5c4001a71eae
+    directory: data/text/raw/bge
+    include: [bge-m3-data.tar.gz]
+  promptriever:
+    repo: samaya-ai/msmarco-w-instructions
+    revision: 1006ea795bec0ce551ec62d128537245430f024a
+    directory: data/text/promptriever-msmarco
+    include: ['data/train-*.parquet']
+  inf-ir:
+    repo: InF-IR/InF-IR
+    revision: 73e2f41d02c7460072f46fd34b95cd7b45e0af8c
+    directory: data/text/inf-ir-msmarco-only
+    include: ['data/msmarco-*.parquet']
+  toolret:
+    repo: mangopy/ToolRet-Training-20w
+    revision: fdf5a317455b1e60785de7ba587496aa6cc878e4
+    directory: data/tool/raw/toolret
+    include: ['ToolRet-Training-20w/train-*.parquet']
+  toolrex:
+    repo: Lux1997/Tool-REX_train_retriever_50k
+    revision: a318d38cc04db8ec48f89a577ed788afc5a13bd7
+    directory: data/tool/raw/toolrex
+    include: [Tool-DE_train_retriever_50k.json]
+  evo:
+    repo: MiG-NJU/EvoTrain-180K
+    revision: 3b54d0f460414b1a5c5a660c316286b6cbcf08a7
+    directory: data/memory/raw
+    include: ['data_chunk_*.json']
+  gui:
+    repo: iMeanAI/GAE-Bench-lite
+    directory: data/gui
+    include: [AutoWebGLM/original.parquet, WebArena/original.parquet, WebLINX/original.parquet]
+  llava-hound:
+    repo: ShareGPTVideo/train_video_and_instruction
+    revision: 7ed0b5422bfdcfb385cd394d69675b81eb14261c
+    directory: data/video/raw/llava_hound
+    include: ['train_300k/*', 'video_instruction/*']
+# Media and annotations to obtain under the source projects' terms.
+upstream:
+  gui_screenshots: https://huggingface.co/datasets/iMeanAI/UATD
+  gui_weblinx: https://huggingface.co/datasets/McGill-NLP/weblinx
+  msrvtt: https://www.microsoft.com/en-us/research/publication/msr-vtt-a-large-video-description-dataset-for-bridging-video-and-language/
+  msvd: https://www.cs.utexas.edu/users/ml/clamp/videoDescription/
+  didemo: https://github.com/LisaAnne/LocalizingMoments
+  ssv2: https://www.qualcomm.com/developer/software/something-something-v-2-dataset
+  audiocaps: https://audiocaps.github.io/
+  ave: https://github.com/YapengTian/AVE-ECCV18
+  clotho: https://zenodo.org/records/4783391
+  speechcoco: https://github.com/William-N-Havard/SpeechCoco
+  fsd50k: https://zenodo.org/records/4060432
+  nsynth: https://magenta.tensorflow.org/datasets/nsynth
+  speechcommand: https://www.tensorflow.org/datasets/catalog/speech_commands
+  urbansound8k: https://urbansounddataset.weebly.com/urbansound8k.html
